@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.kaiser {
+    background-color: blue;
+    color: black;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 60px;
+    letter-spacing: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.sae {
+    background-color: pink;
+    color: black;
+    font-weight: bold;
+}
+
+.rin {
+    background-color: red;
+    color: black;
+    text-align: center;
+}
