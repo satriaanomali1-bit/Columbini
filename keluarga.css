@@ -2,3 +2,7 @@ hr {
     background: linear-gradient(to right, blue, cornflowerblue, aqua);
     height: 3px;
 }
+
+h1 {
+    text-decoration: underline;
+}
