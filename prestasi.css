@@ -1,0 +1,20 @@
+hr {
+    height: 3px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.list {
+    list-style: none;
+}
+
+.list li {
+    background-image: url(bina.gif);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px;
+    padding-left: 30px;
+    line-height: 25px;
+}
