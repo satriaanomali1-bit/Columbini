@@ -15,3 +15,7 @@ hr {
     background: linear-gradient(to right, #c77dff, #d9a7ff, #ff8fd8);
     height: 3px;
 }
+
+h1 {
+    text-decoration: underline;
+}
