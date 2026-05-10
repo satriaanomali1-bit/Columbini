@@ -2,7 +2,11 @@ body {
     background-image: url(bini1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-posisition: center;
+    background-attachment: fixed;
     text-shadow: 2px 2px 5px black;
+    min-height: 100vh;
+    margin: 0;
     color: #d8b4ff;
     font-family: 'poppins', sans-serif;
 }
