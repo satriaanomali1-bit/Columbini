@@ -1,0 +1,13 @@
+body {
+    background-image: url(bini1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 2px 2px 5px black;
+    color: #d8b4ff;
+    font-family: 'poppins', sans-serif;
+}
+
+hr {
+    background: linear-gradient(to right, #c77dff, #d9a7ff, #ff8fd8);
+    height: 3px;
+}
