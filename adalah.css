@@ -1,0 +1,30 @@
+body {
+    background: linear-gradient(to right, aqua, white, aqua);
+    text-align: center;
+}
+.co {
+    width: 40%;
+    height: 60%;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin: auto;
+}
+.kotak {
+    height: 130px;
+    width: 250px;
+    border: 3px solid black;
+    background-color: white;
+    margin: auto;
+}
+.umum {
+    font-family: 'poppins', sans-serif;
+    color: black;
+}
+img {
+    position: absolute 50%;
+}
+.nama1 {
+    font-weight: bold;
+    font-size: 26px;
+}
