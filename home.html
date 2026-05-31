@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zahra</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffb6c1, #ffc0cb, #ffd1dc);
+    margin: 0;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+body.dark{
+    background: #1e1e1e;
+    color: white;
+}
+
+.container{
+    background: white;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255,20,147,0.3);
+}
+
+.dark .container{
+    background: #2d2d2d;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    color: deeppink;
+}
+
+p{
+    text-align: justify;
+    line-height: 1.6;
+}
+
+hr{
+    border: 2px solid pink;
+}
+
+ul{
+    color: #c71585;
+}
+
+button{
+    background: hotpink;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td{
+    border: 2px solid hotpink;
+}
+
+th{
+    background-color: hotpink;
+    color: white;
+    padding: 10px;
+}
+
+td{
+    padding: 10px;
+    text-align: center;
+}
+
+#jam{
+    text-align: center;
+    font-size: 20px;
+    color: deeppink;
+    margin-bottom: 15px;
+}
+
+#topBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Zahra Carina Indriani</h1>
+
+    <div id="jam"></div>
+
+    <center>
+        <button onclick="bukaGaleri()">Buka Brankas Rahasia 😹💔</button>
+        <button onclick="toggleDarkMode()">Mode Hitam</button>
+    </center>
+
+    <p>
+        Gw suka banget sama zahra, gw cinta banget sama zahra,
+        gw rela ngejual semua yang gw miliki buat zahra. Gw
+        juga benci semua orang yang berusaha mendekati zahra,
+        gw harap mereka mati aja.
+    </p>
+
+    <hr>
+
+    <h2>Hal Yang Gw Suka Dari Zahra</h2>
+
+    <ul>
+        <li>Sifat Nya Yang Ceria Dan Murah Senyum</li>
+        <li>Punya Hobi Yang Sama</li>
+        <li>Short Hair</li>
+        <li>Yandere</li>
+        <li>Tepos</li>
+    </ul>
+
+    <hr>
+
+    <h2>Data</h2>
+
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Bingung</th>
+            <th>Bingung</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Tinggi Badan</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Berat Badan</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ukuran Sepatu</td>
+            <td>X</td>
+        </tr>
+    </table>
+
+</div>
+
+<button id="topBtn" onclick="keAtas()">⬆</button>
+
+<script>
+
+// Password Galeri
+function bukaGaleri(){
+
+    let pass = prompt("Masukkan Password:");
+
+    if(pass === "gw cinta mati sama zahra"){
+        window.location.href = "galery.html";
+    }else{
+        alert("Password nya salah idiott!");
+    }
+
+}
+
+// Jam Realtime
+function updateJam(){
+    let now = new Date();
+
+    document.getElementById("jam").innerHTML =
+        now.toLocaleTimeString("id-ID");
+}
+
+setInterval(updateJam,1000);
+updateJam();
+
+// Dark Mode
+function toggleDarkMode(){
+    document.body.classList.toggle("dark");
+}
+
+// Tombol Scroll Atas
+window.onscroll = function(){
+
+    if(document.documentElement.scrollTop > 100){
+        document.getElementById("topBtn").style.display = "block";
+    }else{
+        document.getElementById("topBtn").style.display = "none";
+    }
+
+}
+
+function keAtas(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+}
+
+</script>
+
+</body>
+</html>

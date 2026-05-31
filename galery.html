@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeri Foto</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ffd6ea,#fff0f7);
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    color:#d63384;
+    margin-bottom:10px;
+}
+
+.counter{
+    text-align:center;
+    color:#a61e63;
+    margin-bottom:20px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.foto{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    cursor:pointer;
+}
+
+.caption{
+    text-align:center;
+    padding:10px;
+    color:#d63384;
+    font-weight:bold;
+}
+
+.lightbox{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+.lightbox img{
+    max-width:90%;
+    max-height:85%;
+    border-radius:15px;
+}
+
+.close{
+    position:absolute;
+    top:20px;
+    right:30px;
+    color:white;
+    font-size:40px;
+    cursor:pointer;
+}
+
+</style>
+</head>
+<body>
+
+<h1>❤️ Galeri Foto ❤️</h1>
+
+<div class="counter">
+    Total Foto: 34
+</div>
+
+<div class="gallery">
+
+    <div class="card">
+        <img src="my 1.jpeg" class="foto" alt="Foto 1">
+        <div class="caption">Foto 1</div>
+    </div>
+
+    <div class="card">
+        <img src="my 2.jpeg" class="foto" alt="Foto 2">
+        <div class="caption">Foto 2</div>
+    </div>
+
+    <div class="card">
+        <img src="my 3.jpeg" class="foto" alt="Foto 3">
+        <div class="caption">Foto 3</div>
+    </div>
+
+    <div class="card">
+        <img src="my 4.jpeg" class="foto" alt="Foto 4">
+        <div class="caption">Foto 4</div>
+    </div>
+
+    <div class="card">
+        <img src="my 5.jpeg" class="foto" alt="Foto 5">
+        <div class="caption">Foto 5</div>
+    </div>
+
+    <div class="card">
+        <img src="my 6.jpeg" class="foto" alt="Foto 6">
+        <div class="caption">Foto 6</div>
+    </div>
+
+    <div class="card">
+        <img src="my 7.jpeg" class="foto" alt="Foto 7">
+        <div class="caption">Foto 7</div>
+    </div>
+
+    <div class="card">
+        <img src="my 8.jpeg" class="foto" alt="Foto 8">
+        <div class="caption">Foto 8</div>
+    </div>
+
+    <div class="card">
+        <img src="my 9.jpeg" class="foto" alt="Foto 9">
+        <div class="caption">Foto 9</div>
+    </div>
+
+    <div class="card">
+        <img src="my 10.jpeg" class="foto" alt="Foto 10">
+        <div class="caption">Foto 10</div>
+    </div>
+
+    <div class="card">
+        <img src="my 11.jpeg" class="foto" alt="Foto 11">
+        <div class="caption">Foto 11</div>
+    </div>
+
+    <div class="card">
+        <img src="my 12.jpeg" class="foto" alt="Foto 12">
+        <div class="caption">Foto 12</div>
+    </div>
+
+    <div class="card">
+        <img src="my 13.jpeg" class="foto" alt="Foto 13">
+        <div class="caption">Foto 13</div>
+    </div>
+
+    <div class="card">
+        <img src="my 14.jpeg" class="foto" alt="Foto 14">
+        <div class="caption">Foto 14</div>
+    </div>
+
+    <div class="card">
+        <img src="my 15.jpeg" class="foto" alt="Foto 15">
+        <div class="caption">Foto 15</div>
+    </div>
+
+    <div class="card">
+        <img src="my 16.jpeg" class="foto" alt="Foto 16">
+        <div class="caption">Foto 16</div>
+    </div>
+
+    <div class="card">
+        <img src="my 17.jpeg" class="foto" alt="Foto 17">
+        <div class="caption">Foto 17</div>
+    </div>
+
+    <div class="card">
+    <img src="my 18.jpeg" class="foto" alt="Foto 18">
+    <div class="caption">Foto 18</div>
+</div>
+
+<div class="card">
+    <img src="my 19.jpeg" class="foto" alt="Foto 19">
+    <div class="caption">Foto 19</div>
+</div>
+
+<div class="card">
+    <img src="my 20.jpeg" class="foto" alt="Foto 20">
+    <div class="caption">Foto 20</div>
+</div>
+
+<div class="card">
+    <img src="my 21.jpeg" class="foto" alt="Foto 21">
+    <div class="caption">Foto 21</div>
+</div>
+
+<div class="card">
+    <img src="my 22.jpeg" class="foto" alt="Foto 22">
+    <div class="caption">Foto 22</div>
+</div>
+
+<div class="card">
+    <img src="my 23.jpeg" class="foto" alt="Foto 23">
+    <div class="caption">Foto 23</div>
+</div>
+
+<div class="card">
+    <img src="my 24.jpeg" class="foto" alt="Foto 24">
+    <div class="caption">Foto 24</div>
+</div>
+
+<div class="card">
+    <img src="my 25.jpeg" class="foto" alt="Foto 25">
+    <div class="caption">Foto 25</div>
+</div>
+
+<div class="card">
+    <img src="my 26.jpeg" class="foto" alt="Foto 26">
+    <div class="caption">Foto 26</div>
+</div>
+
+<div class="card">
+    <img src="my 27.jpeg" class="foto" alt="Foto 27">
+    <div class="caption">Foto 27</div>
+</div>
+
+<div class="card">
+    <img src="my 28.jpeg" class="foto" alt="Foto 28">
+    <div class="caption">Foto 28</div>
+</div>
+
+<div class="card">
+    <img src="my 29.jpeg" class="foto" alt="Foto 29">
+    <div class="caption">Foto 29</div>
+</div>
+
+<div class="card">
+    <img src="my 30.jpeg" class="foto" alt="Foto 30">
+    <div class="caption">Foto 30</div>
+</div>
+
+<div class="card">
+    <img src="my 31.jpeg" class="foto" alt="Foto 31">
+    <div class="caption">Foto 31</div>
+</div>
+
+<div class="card">
+    <img src="my 32.jpeg" class="foto" alt="Foto 32">
+    <div class="caption">Foto 32</div>
+</div>
+
+<div class="card">
+    <img src="my 33.jpeg" class="foto" alt="Foto 33">
+    <div class="caption">Foto 33</div>
+</div>
+
+<div class="card">
+    <img src="my 34.jpeg" class="foto" alt="Foto 34">
+    <div class="caption">Foto 34</div>
+</div>
+</div>
+
+<div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img id="preview">
+</div>
+
+<script>
+
+const photos = document.querySelectorAll(".foto");
+const lightbox = document.getElementById("lightbox");
+const preview = document.getElementById("preview");
+
+photos.forEach(photo => {
+
+    photo.addEventListener("click", () => {
+
+        preview.src = photo.src;
+        lightbox.style.display = "flex";
+
+    });
+
+});
+
+lightbox.addEventListener("click", () => {
+
+    lightbox.style.display = "none";
+
+});
+
+</script>
+
+</body>
+</html>
